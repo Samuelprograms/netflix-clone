@@ -1,0 +1,39 @@
+.movie {
+  margin-left: 60px;
+  color: #fff;
+}
+.movie h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.movie__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-bottom: 10px;
+}
+.movie__posters::-webkit-scrollbar {
+  height: 20px;
+}
+.movie__posters::-webkit-scrollbar-thumb {
+  /* display: none; */
+  background-color: aqua;
+  background: linear-gradient(to right, transparent, rgba(255, 0, 0, 0.5));
+  border-radius: 40px;
+}
+.movie__poster {
+  max-height: 13rem;
+  width: 100%;
+  margin-right: 4px;
+  border-radius: 5px;
+  transition: transform 450ms;
+}
+.movie__poster:hover {
+  transform: scale(1.1);
+}
+
+.movie__posterLarge {
+  max-height: 400px;
+  margin-right: 4px;
+  border-radius: 5px;
+}
